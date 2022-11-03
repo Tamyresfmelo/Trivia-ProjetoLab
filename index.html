@@ -1,0 +1,96 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Quiz</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    
+    <div id="jogo">
+  
+      <h2 id="nome_jogador_texto"> </h2>
+      
+			<h1>ADIVINHE A CIDADE!</h1>	  
+
+		  <div id="questao_1">
+		   <p class="questao1"> Questão 1: Onde se encontra essa cidade? <br/>
+         
+         <ul>
+         <li>
+		    <img src="Img/rio-de-janeiro.jpg"> <br>
+		    <input id="questao_1_answer_a" onclick="respostaBrasil(this)" class="button" name="pais_brasil" value="Rio De janeiro"/>  </li> </br>
+           <li>
+		    <input id="questao_1_answer_b" onclick="respostaBrasil(this)" class="button" name="pais_brasil" value="Italia"/> </li> </br>
+           <li>
+		    <input id="questao_1_answer_c" onclick="respostaBrasil(this)" class="button" name="pais_brasil" value="Nepal"/> </li> </br>
+           <li>
+			  <input id="responder" type="button" onclick="verRespostaBrasil()" class="button1" value= "Responder e ver resultado">			 
+			    </p> </ul> <br/>
+         
+				</div>
+    
+			  <div class="container"> 
+          
+				<div id="questao_2">
+          
+		  <p class="questao2"> Questão 2: Onde se encontra essa cidade?<br/>
+        
+        <ul>
+         <li>
+		       <img src="Img/dubai.png"> <br/>
+            <li>
+		    <input id="questao_2_answer_a" onclick="respostaDubai(this)" class="button" name="pais_dubai" value="Venezuela"/> </li> </br>
+           <li>
+		    <input id="questao_2_answer_b" onclick="respostaDubai(this)" class="button" name="pais_dubai" value="Emirados Arabes"/> </li> </br>
+           <li>
+		    <input id="questao_2_answer_c" onclick="respostaDubai(this)" class="button" name="pais_dubai" value="Burundi"/> </li> </br>
+           <li>
+							<input id="responder" type="button" onclick="verRespostaDubai()" class="button1" value= "Responder e ver resultado"<br/>
+			 </div> </li> </ul> </br>
+          
+					<div class="container">
+            
+			 <div id="questao_3">
+         
+		 <p class="questao3"> Questão 3: Onde se encontra essa cidade? <br/>
+       
+				<ul>
+         <li>		
+			<img src="Img/horario-londres.jpg"> <br/>
+      <li>
+			<input id="questao_3_answer_a" onclick="respostaLondres(this)" class="button" name="pais_londres" value="Catar"/>  <li> </b>
+           <li>
+			<input id="questao_3_answer_b" onclick="respostaLondres(this)" class="button" name="pais_londres" value="Bélgica"/> <li> </b>
+           <li>
+		  <input id="questao_3_answer_c" onclick="respostaLondres(this)" class="button" name="pais_londres" value="Reino Unido"/> <li> </b>
+           <li>
+		  <input id="responder" type="button" onclick="verRespostaLondres()" class="button1" value= "Responder e Ver Resultado">
+			 </p> </ul> <br/>
+				</div>
+          </div> 
+        </div>
+     </div>
+
+    <div id="resultado">
+      <h1> Obrigada! </h1>
+      <h2 id="informacao_resultado"></h2>
+      <input id="recomecar" type="button" value="Jogar Novamente" onclick="reiniciarJogo()">
+    </div>
+    
+    <div id="nome_bem_vindo">
+      <h3>Qual o seu nome?</h3><br />
+      <input type class="text1" id="nome_jogador"><br /><br /><br />
+      <input type class="button2" onclick="comecarJogo()" value="Vamos começar?">
+     
+    </div>
+
+	<div id="app"></div>
+
+
+            
+ <script type="text/javascript" src="script.js"></script>
+            
+  </body>
+
+</html>
